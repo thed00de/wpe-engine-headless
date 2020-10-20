@@ -1,33 +1,29 @@
 {
-  "name": "wpe-engine-headless",
+  "name": "my-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Frontity project",
+  "keywords": [
+    "frontity"
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "start": "next start -p 8080",
-    "wpe-build": "next build"
+    "dev": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity serve",
+    "wpe-build": "frontity build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nicholasio/wpe-engine-headless.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nicholasio/wpe-engine-headless/issues"
-  },
-  "homepage": "https://github.com/nicholasio/wpe-engine-headless#readme",
+  "prettier": {},
   "dependencies": {
-    "next": "^9.5.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
-    "@types/node": "^14.11.2",
-    "@types/react": "^16.9.49",
-    "typescript": "^4.0.3"
+    "@10up/frontity-elasticpress": "^0.9.0",
+    "@frontity/core": "^1.9.0",
+    "@frontity/html2react": "^1.4.0",
+    "@frontity/tiny-router": "^1.2.2",
+    "@frontity/twentytwenty-theme": "./packages/twentytwenty-theme",
+    "@frontity/wp-source": "^1.9.1",
+    "frontity": "^1.12.0"
   }
 }
