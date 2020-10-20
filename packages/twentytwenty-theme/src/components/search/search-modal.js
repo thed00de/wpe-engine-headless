@@ -44,10 +44,10 @@ const SearchModal = ({ state, actions }) => {
       actions.router.set(`/?s=${formatQuery(searchString)}`);
 
       // Scroll the page to the top
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
 
       // Close the search modal
-      closeSearchModal();
+      // closeSearchModal();
     }
   };
 
@@ -103,6 +103,7 @@ const SearchModal = ({ state, actions }) => {
                         defaultValue={searchQuery || ""}
                         placeholder="search for:"
                         name="search"
+                        onChange={handleSubmit}
                       />
                       <SearchButton bg={primary}>Search</SearchButton>
                     </SearchForm>
